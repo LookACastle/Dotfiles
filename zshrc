@@ -17,6 +17,9 @@ source /usr/share/zsh/scripts/antigen/antigen.zsh
 antigen use oh-my-zsh
 antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
+# Plugins
+antigen bundle thefuck
+
 # Eyecandy
 screenfetch
 
