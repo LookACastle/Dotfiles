@@ -9,3 +9,16 @@ zstyle :compinstall filename '/home/lookacastle/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+# Include antigen
+source /usr/share/zsh/scripts/antigen/antigen.zsh
+
+# Theme
+antigen use oh-my-zsh
+antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+
+# Eyecandy
+screenfetch
+
+# Apply antigen
+antigen apply
