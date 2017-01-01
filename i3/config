@@ -180,6 +180,7 @@ assign [class="^torguard$"] $workspace10
 assign [class="^qbitttorrent$"] $workspace10
 
 # Startup programs
+exec xset s off -dpms
 exec compton
 exec redshift
 exec anamnesis --start
