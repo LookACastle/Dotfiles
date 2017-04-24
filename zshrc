@@ -15,13 +15,13 @@ source /usr/share/zsh/share/antigen.zsh
 
 # Theme
 antigen use oh-my-zsh
-antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+antigen theme bureau
 
 # Plugins
 antigen bundle https://github.com/nvbn/thefuck
 
 # Eyecandy
-screenfetch
+neofetch
 
 # Apply antigen
 antigen apply
