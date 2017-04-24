@@ -17,10 +17,6 @@ source /usr/share/zsh/share/antigen.zsh
 antigen use oh-my-zsh
 antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
-if (( ! $+commands[node] )); then
-  return      
-fi
-
 # Plugins
 antigen bundle https://github.com/nvbn/thefuck
 
