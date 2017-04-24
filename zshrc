@@ -11,17 +11,20 @@ compinit
 # End of lines added by compinstall
 
 # Include antigen
-source /usr/share/zsh/scripts/antigen/antigen.zsh
+source /usr/share/zsh/share/antigen.zsh
 
 # Theme
 antigen use oh-my-zsh
 antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
 # Plugins
-antigen bundle thefuck
+antigen bundle https://github.com/nvbn/thefuck
 
 # Eyecandy
 screenfetch
 
 # Apply antigen
 antigen apply
+
+# Making thefuck work
+eval "$(thefuck --alias fuck)"

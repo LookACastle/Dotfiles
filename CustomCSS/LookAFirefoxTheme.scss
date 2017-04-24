@@ -1,0 +1,47 @@
+/* Inspired by Twily's CSS, http://twily.info/ */
+
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* Variables */
+$primary-colour: #282828;
+$accent-colour: #446578;
+$accent-colour-muted: #446573;
+
+/* Tabs */
+
+.tabbrowser-tabs {
+
+	min-width: 20px;
+
+	max-width: 100%;
+
+}
+
+
+/* Searchbar */
+
+#searchbar {
+
+	display: none;
+
+}
+
+/* URL bar */
+
+#identity-box, #identity-icon-labels {
+	
+	color: transparent;
+
+	background-color: $primary-color
+
+}
+
+
+/* Status panel */
+
+
+#statusbar-display[label^="Looking"],
+#statusbar-display[label^="Connect"],
+#statusbar-display[label^="Waiting"],
+#statusbar-display[label^="Transfer"] {display:none !important;}
+
