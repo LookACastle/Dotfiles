@@ -22,6 +22,7 @@ antigen bundle https://github.com/nvbn/thefuck
 
 # Eyecandy
 neofetch
+(wal -r&)
 
 # Apply antigen
 antigen apply
