@@ -1,7 +1,7 @@
 !---------------------------------------------------------
 !Set font
 !---------------------------------------------------------
-URxvt.font: 			xft:Sauce Code Powerline:size=13
+URxvt.font: 			xft:Anonymice Powerline:size=13
 URxvt.letterSpace: 		-1
 
 
