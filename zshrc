@@ -29,3 +29,6 @@ antigen apply
 
 # Making thefuck work
 eval "$(thefuck --alias fuck)"
+
+# Alias
+alias update="sudo pacman -Syyu; pacaur -Syyua; antigen update"

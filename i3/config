@@ -92,6 +92,9 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# Dropdown terminal 
+bindsym $mod+onehalf exec tdrop -m -a -h 30% -y 0 urxvt
+
 # Set workspaces as variables
 set $workspace1 "1: System monitoring"
 set $workspace2 "2: Browser"
@@ -167,11 +170,6 @@ bar {
         status_command i3blocks
 }
 
-# Media keys
-#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle
-#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +1%
-#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -1%
-
 # Startup programs
 exec xset s off -dpms
 exec compton
@@ -203,3 +201,6 @@ for_window [class="^.*"] border pixel 0
 # i3-gaps 
 gaps inner 12 
 smart_gaps on
+
+bindsym $mod+Shift+t gaps inner all set 0
+bindsym $mod+t gaps inner all set 12
