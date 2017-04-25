@@ -11,7 +11,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-call vundle#end()            
+Plugin 'dylanaraps/wal'
+call vundle#end()
 filetype plugin indent on 
 
 " air-line
