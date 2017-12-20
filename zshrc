@@ -30,5 +30,9 @@ antigen apply
 # Making thefuck work
 eval "$(thefuck --alias fuck)"
 
+# Set vi-mode
+#set -o vi
+
 # Alias
-alias update="sudo pacman -Syyu; pacaur -Syyua; antigen update"
+alias update="pacaur -Syyua; sudo pacman -Syuu; antigen update"
+alias lockscreen="~/Dotfiles/Scripts/lockscreen.sh"

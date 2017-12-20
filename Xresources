@@ -1,7 +1,8 @@
 !---------------------------------------------------------
 !Set font
 !---------------------------------------------------------
-URxvt.font: 			xft:Sauce Code Powerline:size=13
+!Fallback on terminus
+URxvt*font: 			xft:Sauce Code Powerline:size=13,xft:Terminus:size=13
 URxvt.letterSpace: 		-1
 
 

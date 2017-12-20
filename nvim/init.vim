@@ -9,11 +9,16 @@ syntax on
 set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+
+" Plugins
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dylanaraps/wal'
 call vundle#end()
-filetype plugin indent on 
+filetype plugin indent on
+
+" Colourscheme 
+colorscheme wal
 
 " air-line
 let g:airline_powerline_fonts = 1
