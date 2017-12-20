@@ -15,20 +15,17 @@ source /usr/share/zsh/share/antigen.zsh
 
 # Theme
 antigen use oh-my-zsh
-antigen theme bureau
+antigen theme ys 
 
 # Plugins
-antigen bundle https://github.com/nvbn/thefuck
-
-# Eyecandy
-neofetch
-(wal -r&)
+antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Apply antigen
 antigen apply
 
-# Making thefuck work
-eval "$(thefuck --alias fuck)"
+# Eyecandy
+neofetch
+(wal -r&)
 
 # Set vi-mode
 #set -o vi

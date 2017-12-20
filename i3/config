@@ -98,13 +98,13 @@ bindsym $mod+onehalf exec tdrop -m -a -h 30% -y 0 urxvt
 # Set workspaces as variables
 set $workspace1 "1: System monitoring"
 set $workspace2 "2: Browser"
-set $workspace3 "3: Anime"
-set $workspace4 "4: Music"
-set $workspace5 "5: Coding"
+set $workspace3 "3: Filler"
+set $workspace4 "4: Audio"
+set $workspace5 "5: Working"
 set $workspace6 "6: Chat"
-set $workspace7 "7:"
-set $workspace8 "8:" 
-set $workspace9 "9:"
+set $workspace7 "7: Misc 1"
+set $workspace8 "8: VM" 
+set $workspace9 "9: Misc 2"
 set $workspace10 "10: Downloads"
 
 # switch to workspace
