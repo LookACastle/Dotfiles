@@ -173,6 +173,7 @@ bar {
 # Startup programs
 exec xset s off -dpms
 exec compton
+exec mpd
 exec redshift
 exec anamnesis --start
 exec wal -i "$(< "${HOME}/.cache/wal/wal")" -a 80
