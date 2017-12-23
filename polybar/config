@@ -53,8 +53,8 @@ label-urgent-background = #ff0000
 type = internal/mpd
 format-online = <label-song> 
 
-label-song-maxlen = 60
-label-song-ellipsis = true
+label-song-maxlen = 120
+label-song-ellipsis = false
 
 [module/cpu]
 type = internal/cpu
