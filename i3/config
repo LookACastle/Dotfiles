@@ -213,5 +213,5 @@ bindsym $mod+Control+Right exec mpc seek +00:00:05
 bindsym $mod+Control+Up exec mpc volume +1
 bindsym $mod+Control+Down exec mpc volume -1
 bindsym $mod+Control+F1 exec mpc toggle
-bindsym $mod+Control+F2 exec mpc previous
+bindsym $mod+Control+F2 exec mpc prev
 bindsym $mod+Control+F3 exec mpc next
