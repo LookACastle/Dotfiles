@@ -204,13 +204,13 @@ bindsym $mod+Shift+t gaps inner all set 0
 bindsym $mod+t gaps inner all set 12
 
 # Lockscreen
-bindsym $mod+x exec ~/Dotfiles/Scripts/lockscreen.sh
+bindsym $mod+x exec --no-startup-id ~/Dotfiles/Scripts/lockscreen.sh
 
 # Music controls
-bindsym $mod+Control+Left exec mpc seek -00:00:05
-bindsym $mod+Control+Right exec mpc seek +00:00:05
-bindsym $mod+Control+Up exec mpc volume +1
-bindsym $mod+Control+Down exec mpc volume -1
-bindsym $mod+Control+F1 exec mpc toggle
-bindsym $mod+Control+F2 exec mpc prev
-bindsym $mod+Control+F3 exec mpc next
+bindsym $mod+Control+Left exec --no-startup-id mpc seek -00:00:05
+bindsym $mod+Control+Right exec --no-startup-id mpc seek +00:00:05
+bindsym $mod+Control+Up exec --no-startup-id mpc volume +1
+bindsym $mod+Control+Down exec --no-startup-id mpc volume -1
+bindsym $mod+Control+F1 exec --no-startup-id mpc toggle
+bindsym $mod+Control+F2 exec --no-startup-id mpc prev
+bindsym $mod+Control+F3 exec --no-startup-id mpc next
