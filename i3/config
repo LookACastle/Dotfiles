@@ -206,6 +206,9 @@ bindsym $mod+t gaps inner all set 12
 # Lockscreen
 bindsym $mod+x exec --no-startup-id ~/Dotfiles/Scripts/lockscreen.sh
 
+# For internet outages
+bindsym $mod+Control+F12 exec --no-startup-id "until ping -c1 google.com &>/dev/null; do :; done; espeak 'Internet connection restored'"
+
 # Music controls
 bindsym $mod+Control+Left exec --no-startup-id mpc seek -00:00:05
 bindsym $mod+Control+Right exec --no-startup-id mpc seek +00:00:05
