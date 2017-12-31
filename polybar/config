@@ -84,7 +84,7 @@ format-disconnected = <label-disconnected>
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
 
 date = " %Y-%m-%d"
 
