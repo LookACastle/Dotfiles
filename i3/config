@@ -168,7 +168,7 @@ bindsym $mod+r mode "resize"
 
 # Startup programs
 exec --no-startup-id xset s off -dpms
-exec --no-startup-id compton -b -d :0
+exec --no-startup-id compton -b -d :0 --vsync opengl --dbe
 exec --no-startup-id redshift
 exec --no-startup-id anamnesis --start
 exec --no-startup-id wal -i "$(< "${HOME}/.cache/wal/wal")" -a 80
