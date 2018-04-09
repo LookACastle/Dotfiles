@@ -33,3 +33,6 @@ neofetch
 # Alias
 alias update="pacaur -Syyua; sudo pacman -Syuu; antigen update"
 alias lockscreen="~/Dotfiles/Scripts/lockscreen.sh"
+alias jpgtopngthisdir="find -name '*.jpg' -print0 | xargs -0 -r mogrify -format png; find -name '*.jpg' -print0 | xargs -0 -r rm"
+alias destroyorphans="sudo pacman -Rns $(pacman -Qdtq); pacaur -Rns $(pacaur -Qdtq)"
+alias relaunchvpn="pkill torguard; torguard&"
