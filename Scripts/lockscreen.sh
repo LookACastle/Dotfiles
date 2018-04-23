@@ -27,6 +27,6 @@ i3lock \
   --insidevercolor=fecf4dff --insidewrongcolor=d23c3dff \
   --ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+290:h-120" \
   --radius=20 --ring-width=3 --veriftext="" --wrongtext="" \
-  --textcolor="ffffffff" --timecolor="ffffffff" --datecolor="ffffffff"
+  --textcolor="ffffffff" --timecolor="ffffffff" --datecolor="ffffffff" 
 
 rm /tmp/screen.png

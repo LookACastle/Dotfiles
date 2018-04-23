@@ -2,8 +2,8 @@
 !Set font
 !---------------------------------------------------------
 !Fallback on terminus, then font-awesome
-URxvt*font: xft:Sauce Code Powerline:size=13, xft:M+ 1mn:style=light:size=13, xft:Terminus:size=13, xft:FontAwesome:size=13,xft:Noto Emoji:size=13
-URxvt.letterSpace: 	-1	
+URxvt*font: xft:Sauce Code Powerline:size=13, xft:Terminus:size=13, xft:FontAwesome:size=13,xft:Noto Emoji:size=13
+URxvt.letterSpace: 		-1
 
 
 !---------------------------------------------------------
