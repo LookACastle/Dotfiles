@@ -31,5 +31,6 @@ neofetch
 #set -o vi
 
 # Alias
-alias update="trizen -Syyua; sudo pacman -Syuu; antigen update"
+alias update="sudo pacman -Syuu; yay; antigen update"
 alias lockscreen="~/Dotfiles/Scripts/lockscreen.sh"
+alias mywget="wget --no-parent --recursive --continue --user-agent=\"User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:32.0) Gecko/20100101 Firefox/32.0\" --timestamping -e robots=off --no-check-certificate"
