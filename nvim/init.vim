@@ -1,6 +1,6 @@
 " General
 set nocompatible
-filetype off 
+filetype off " Set on later 
 set number
 set linebreak
 syntax on
@@ -14,6 +14,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dylanaraps/wal'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'fsharp/vim-fsharp'
 call vundle#end()
 filetype plugin indent on
 
@@ -29,26 +31,24 @@ endif
 
 " unicode symbols
 let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
 let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
 let g:airline_symbols.linenr = '␊'
 let g:airline_symbols.linenr = '␤'
 let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.branch = 'B'
 let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
-" airline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
-
 " Airline theme
 let g:airline_theme = 'solarized'
+
+" Spaces instead of tabs
+set expandtab 		" tabs are spaces
+set shiftwidth=4	" size of indents in spaces
+set softtabstop=4	" simulate tabs with this many spaces
+
+" Make fsharp work
+autocmd BufNewFile,BufRead *.fsx set syntax=fsharp
+autocmd BufNewFile,BufRead *.fs set syntax=fsharp
