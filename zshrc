@@ -25,7 +25,7 @@ antigen apply
 
 # Eyecandy
 neofetch
-(cat ~/.cache/wal/sequences &)
+cat ~/.cache/wal/sequences
 
 # Set vi-mode
 #set -o vi
