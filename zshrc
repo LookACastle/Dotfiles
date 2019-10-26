@@ -39,3 +39,6 @@ alias playvn="LC_ALL=ja_JP LANG=ja_JP WINEPREFIX=~/.vn wine"
 # Enviroment variables
 export EDITOR=nvim
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+# opam configuration
+test -r /home/lookacastle/.opam/opam-init/init.zsh && . /home/lookacastle/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

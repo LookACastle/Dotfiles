@@ -77,8 +77,6 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -214,3 +212,6 @@ bindsym $mod+Control+Down exec --no-startup-id mpc volume -1
 bindsym $mod+Control+F1 exec --no-startup-id mpc toggle
 bindsym $mod+Control+F2 exec --no-startup-id mpc prev
 bindsym $mod+Control+F3 exec --no-startup-id mpc next
+
+# Screenshot
+bindsym $mod+s exec "flameshot gui -p ~/Media/Pictures/Screenshots"
