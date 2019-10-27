@@ -3,43 +3,42 @@
  * Copyright: Dave Davenport
  */
 * {{
-    text-color:  #88{foreground.strip};
-    background-color:  #88{background.strip};
-    dark: #88{cursor.strip};
+    text-color:  #{foreground.strip}ff;
+    background-color:  #{background.strip}44;
     // Black
-    black:       #88{color0.strip};
-    lightblack:  #88{color8.strip};
+    black:       #{color0.strip}44;
+    lightblack:  #{color8.strip}44;
     //
     // Red
-    red:         #88{color1.strip};
-    lightred:    #88{color9.strip};
+    red:         #{color1.strip}44;
+    lightred:    #{color9.strip}44;
     //
     // Green
-    green:       #88{color2.strip};
-    lightgreen:  #88{color10.strip};
+    green:       #{color2.strip}44;
+    lightgreen:  #{color10.strip}44;
     //
     // Yellow
-    yellow:      #88{color3.strip};
-    lightyellow:     #88{color11.strip};
+    yellow:      #{color3.strip}44;
+    lightyellow:     #{color11.strip}44;
     //
     // Blue
-    blue:      #88{color4.strip};
-    lightblue:     #88{color12.strip};
+    blue:      #{color4.strip}44;
+    lightblue:     #{color12.strip}44;
     //
     // Magenta
-    magenta:      #88{color5.strip};
-    lightmagenta:     #88{color13.strip};
+    magenta:      #{color5.strip}44;
+    lightmagenta:     #{color13.strip}44;
     //
     // Cyan
-    cyan:      #88{color6.strip};
-    lightcyan:     #88{color14.strip};
+    cyan:      #{color6.strip}44;
+    lightcyan:     #{color14.strip}44;
     //
     // White
-    white:      #88{color7.strip};
-    lightwhite:     #88{color15.strip};
+    white:      #{color7.strip}44;
+    lightwhite:     #{color15.strip}44;
     //
     // Bold, Italic, Underline
-    highlight:     bold #88ffffff;
+    highlight:     bold #ffffff;
 }}
 #window {{
     height:   100%;
@@ -47,7 +46,7 @@
     location: east;
     anchor:   east;
     border:  0px 0px 0px 2px;
-    text-color: @lightwhite;
+    text-color: @text-color;
 }}
 
 #mode-switcher {{
@@ -57,17 +56,17 @@
 }}
 #button selected {{
     border-color: @lightgreen;
-    text-color: @lightgreen;
+    text-color: @text-color;
 }}
 #inputbar {{
     background-color: @lightblack;
-    text-color: @lightgreen;
+    text-color: @text-color;
     padding: 4px;
     border: 0px 0px 2px 0px;
 }}
 #mainbox {{
     expand: true;
-    background-color: #1c1c1cee;
+    background-color: @background;
     spacing: 1em;
 }}
 #listview {{
@@ -76,27 +75,27 @@
     lines: 0;
 }}
 #element selected  normal {{
-    background-color: @magenta;
+    background-color: @blue;
 }}
 #element normal active {{
-    text-color: @lightmagenta;
+    text-color: @text-color;
 }}
 #element normal urgent {{
-    text-color: @lightred;
+    text-color: @text-color;
 }}
 #element alternate normal {{
 }}
 #element alternate active {{
-    text-color: @lightmagenta;
+    text-color: @text-color;
 }}
 #element alternate urgent {{
-    text-color: @lightred;
+    text-color: @text-color;
 }}
 #element selected active {{
-    background-color: @lightmagenta;
-    text-color: @dark;
+    background-color: @lightblue;
+    text-color: @text-color;
 }}
 #element selected urgent {{
     background-color: @lightred;
-    text-color: @dark;
+    text-color: @text-color;
 }}
