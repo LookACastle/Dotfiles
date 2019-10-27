@@ -43,9 +43,9 @@
 #window {{
     height:   100%;
     width: 30em;
-    location: east;
-    anchor:   east;
-    border:  0px 0px 0px 2px;
+    location: west;
+    anchor:   west;
+    border:  0px 2px 0px 0px;
     text-color: @text-color;
 }}
 
