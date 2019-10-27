@@ -76,10 +76,10 @@
     lines: 0;
 }}
 #element selected  normal {{
-    background-color: @blue;
+    background-color: @magenta;
 }}
 #element normal active {{
-    text-color: @lightblue;
+    text-color: @lightmagenta;
 }}
 #element normal urgent {{
     text-color: @lightred;
@@ -87,13 +87,13 @@
 #element alternate normal {{
 }}
 #element alternate active {{
-    text-color: @lightblue;
+    text-color: @lightmagenta;
 }}
 #element alternate urgent {{
     text-color: @lightred;
 }}
 #element selected active {{
-    background-color: @lightblue;
+    background-color: @lightmagenta;
     text-color: @dark;
 }}
 #element selected urgent {{

@@ -16,6 +16,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dylanaraps/wal'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'fsharp/vim-fsharp'
+Plugin 'ap/vim-css-color'
 call vundle#end()
 filetype plugin indent on
 
