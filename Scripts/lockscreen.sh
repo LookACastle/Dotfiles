@@ -1,4 +1,4 @@
-#/bin/sh
+#!/bin/bash
 # Lightly modified glichting screen lock script by xzvf
 
 pngfile="/tmp/sclock.png"
