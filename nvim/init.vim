@@ -17,6 +17,10 @@ Plugin 'dylanaraps/wal'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'fsharp/vim-fsharp'
 Plugin 'ap/vim-css-color'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'neoclide/coc.nvim'
 call vundle#end()
 filetype plugin indent on
 
@@ -30,8 +34,6 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
-" unicode symbols
-
 " Airline theme
 let g:airline_theme = 'solarized'
 
@@ -43,3 +45,7 @@ set softtabstop=4	" simulate tabs with this many spaces
 " Make fsharp work
 autocmd BufNewFile,BufRead *.fsx set syntax=fsharp
 autocmd BufNewFile,BufRead *.fs set syntax=fsharp
+
+" Nerdtree
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
