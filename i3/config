@@ -30,7 +30,7 @@ font pango:System San Fransisco Display 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt 
+bindsym $mod+Return exec kitty --config ~/Dotfiles/kitty.conf 
 
 # kill focused window
 bindsym $mod+Shift+q kill

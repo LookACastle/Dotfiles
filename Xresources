@@ -1,17 +1,4 @@
 !---------------------------------------------------------
-!Set font
-!---------------------------------------------------------
-!Fallback on terminus, then font-awesome
-URxvt*font: xft:M+ 1mn:style=regular:size=13, xft:Terminus:size=13, xft:FontAwesome:size=13, xft:Noto Emoji:size=13
-URxvt.letterSpace: 		-1
-
-
-!---------------------------------------------------------
-!Delete scrollbar
-!---------------------------------------------------------
-URxvt.scrollBar: 		false
-
-!---------------------------------------------------------
 !Colours, credit https://gist.github.com/yevgenko/1167205
 !---------------------------------------------------------
 *background: 			#002b36
