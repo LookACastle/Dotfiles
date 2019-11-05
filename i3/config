@@ -72,7 +72,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # Dropdown terminal 
-bindsym $mod+onehalf exec tdrop -m -a -h 30% -y 0 urxvt
+bindsym $mod+onehalf exec tdrop -m -a -h 30% -y 0 "kitty --config ~/Dotfiles/kitty.conf"
 
 # Set workspaces as variables
 set $workspace1 "1: System monitoring"
