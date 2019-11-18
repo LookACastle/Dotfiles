@@ -143,7 +143,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 exec --no-startup-id xset -dpms
-exec --no-startup-id compton --config ~/Dotfiles/compton.conf
+exec --no-startup-id picom --config ~/Dotfiles/picom.conf
 exec --no-startup-id redshift -c ~/Dotfiles/redshift.conf
 exec --no-startup-id copyq
 exec_always --no-startup-id wal -R
