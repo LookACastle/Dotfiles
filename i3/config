@@ -30,7 +30,7 @@ font pango:System San Fransisco Display 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty --config ~/Dotfiles/kitty.conf 
+bindsym $mod+Return exec alacritty --config-file ~/Dotfiles/alacritty.yml
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -72,7 +72,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # Dropdown terminal 
-bindsym $mod+onehalf exec tdrop -m -a -h 30% -y 0 "kitty --config ~/Dotfiles/kitty.conf"
+bindsym $mod+onehalf exec tdrop -m -a -h 30% -y 0 "alacritty --config-file ~/Dotfiles/alacritty.yml"
 
 # Set workspaces as variables
 set $workspace1 "1: System monitoring"
