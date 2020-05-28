@@ -59,6 +59,9 @@ set softtabstop=4	" simulate tabs with this many spaces
 " Make fsharp work
 autocmd BufNewFile,BufRead *.fsx set syntax=fsharp
 autocmd BufNewFile,BufRead *.fs set syntax=fsharp
+autocmd BufNewFile,BufRead *.fsl set syntax=fsharp
+autocmd BufNewFile,BufRead *.fsp set syntax=fsharp
+autocmd BufNewFile,BufRead *.fo set syntax=fasto
 
 " Nerdtree
 map <C-n> :NERDTreeToggle<CR>
