@@ -1,0 +1,43 @@
+{
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    //"height": 21, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    // Choose the order of the modules
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["mpd"],
+    "modules-right": ["network", "cpu", "memory", "clock"],
+    // Modules configuration
+    "sway/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": false,
+        "format": "{name}",
+        "disable-scroll-wraparound": true,
+        "enable-bar-scroll": true
+    },
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "mpd": {
+        "format": "{artist} - {album} - {title}",
+        "unknown-tag": "N/A",
+    },
+    "clock": {
+        "interval": 1,
+        "format": "{:%T}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "RAM: {}%"
+    },
+    "network": {
+        "format-ethernet": "Up: {bandwidthUpBits} Down: {bandwidthDownBits}",
+        "format-disconnected": "Disconnected "
+    },
+}
+
