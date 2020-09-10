@@ -145,9 +145,7 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id gammastep -c ~/Dotfiles/redshift.conf
 exec --no-startup-id copyq
 exec --no-startup-id fcitx 
-exec_always pkill waybar; waybar -c ~/Dotfiles/waybar/config -s ~/Dotfiles/waybar/style.css
-exec_always pkill mako; mako --default-timeout 20000 --border-size 0 --background-color \#00000055
-#exec_always pkill glava; cp -f ~/.cache/wal/bars.glsl ~/.config/glava/bars.glsl; glava --desktop
+exec_always "pkill mako; mako --default-timeout 20000 --border-size 0 --background-color \#00000055"
 
 # Disable focus follows mouse 
 focus_follows_mouse no
@@ -192,4 +190,9 @@ output DVI-D-1 pos 0 0 res 1920x1200
 output DVI-D-2 pos 1920 0 res 1920x1080
 
 # Background
-exec_always pkill swaybg; swaybg -i .background
+output "*" bg ~/.background fill
+
+# Bar
+bar {
+    swaybar_command waybar
+}
