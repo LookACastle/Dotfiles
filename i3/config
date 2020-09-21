@@ -144,7 +144,7 @@ bindsym $mod+r mode "resize"
 
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s 0 0
-exec --no-startup-id picom -CGb -l 0 -t 0 -r 0 -i 1 --vsync
+exec --no-startup-id picom -CGb -l 0 -t 0 -r 0 -i 1 --vsync --config /dev/null --backend glx
 exec --no-startup-id redshift -c ~/Dotfiles/redshift.conf
 exec --no-startup-id copyq
 exec_always --no-startup-id wal -R
