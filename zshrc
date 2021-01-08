@@ -31,10 +31,9 @@ neofetch
 #set -o vi
 
 # Alias
-alias update="sudo pacman -Syuu; yay; antigen update; nvim +PlugUpdate +qall"
+alias update="sudo pacman -Syuu; yay; antigen update; nvim +PlugUpdate +qa"
 alias lockscreen="~/Dotfiles/Scripts/lockscreen.sh"
 alias playvn="LC_ALL=ja_JP LANG=ja_JP WINEPREFIX=~/.vn wine"
-alias zathura="zathura --config-dir ~/.cache/wal"
 
 # Enviroment variables
 export EDITOR=nvim
