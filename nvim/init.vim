@@ -19,6 +19,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim'
+Plug 'lervag/vimtex'
 call plug#end()
 
 " Coc.nvim
