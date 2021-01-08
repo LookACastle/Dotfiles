@@ -32,6 +32,7 @@ neofetch
 
 # Alias
 alias update="sudo pacman -Syuu; yay; antigen update; nvim +PlugUpdate +qa"
+alias zathura="zathura --config-dir=~/.cache/wal"
 alias lockscreen="~/Dotfiles/Scripts/lockscreen.sh"
 alias playvn="LC_ALL=ja_JP LANG=ja_JP WINEPREFIX=~/.vn wine"
 

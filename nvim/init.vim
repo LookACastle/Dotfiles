@@ -49,6 +49,9 @@ endif
 " Airline theme
 let g:airline_theme = 'solarized'
 
+" Automatically compile latex
+let g:vimtex_compiler_method = 'tectonic'
+
 " Make fsharp work
 autocmd BufNewFile,BufRead *.fsx set syntax=fsharp
 autocmd BufNewFile,BufRead *.fs set syntax=fsharp
