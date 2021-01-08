@@ -1,28 +1,25 @@
 " General
 set nocompatible
-filetype off " Set on later 
+filetype on  
 set number
 set linebreak
 syntax on
 
 
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
+call plug#begin()
 
 " Plugins
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'dylanaraps/wal'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'fsharp/vim-fsharp'
-Plugin 'ap/vim-css-color'
-Plugin 'scrooloose/nerdtree'
-Plugin 'ryanoasis/vim-devicons'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'neoclide/coc.nvim'
-call vundle#end()
-filetype plugin indent on
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'dylanaraps/wal'
+Plug 'vim-syntastic/syntastic'
+Plug 'fsharp/vim-fsharp'
+Plug 'ap/vim-css-color'
+Plug 'scrooloose/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'airblade/vim-gitgutter'
+Plug 'neoclide/coc.nvim'
+call plug#end()
 
 " Coc.nvim
 " Use tab for trigger completion with characters ahead and navigate.
@@ -50,11 +47,6 @@ endif
 
 " Airline theme
 let g:airline_theme = 'solarized'
-
-" Spaces instead of tabs
-set expandtab 		" tabs are spaces
-set shiftwidth=4	" size of indents in spaces
-set softtabstop=4	" simulate tabs with this many spaces
 
 " Make fsharp work
 autocmd BufNewFile,BufRead *.fsx set syntax=fsharp
