@@ -181,8 +181,9 @@ smart_gaps on
 bindsym $mod+Shift+t gaps inner all set 0
 bindsym $mod+t gaps inner all set 12
 
-# Lockscreen
+# Scripts
 bindsym $mod+x exec --no-startup-id ~/Dotfiles/Scripts/lockscreen.sh
+bindsym $mod+Shift+d exec --no-startup-id ~/Dotfiles/Scripts/wordLookup.sh
 
 # For internet outages
 bindsym $mod+Control+F12 exec --no-startup-id "until ping -c1 google.com &>/dev/null; do :; done; espeak 'Internet connection restored'"
