@@ -75,16 +75,16 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+onehalf exec tdrop -m -a -h 30% -y 0 "alacritty --config-file ~/Dotfiles/alacritty.yml"
 
 # Set workspaces as variables
-set $workspace1 "1: System monitoring"
-set $workspace2 "2: Browser"
-set $workspace3 "3: Filler"
-set $workspace4 "4: Audio"
-set $workspace5 "5: Working"
-set $workspace6 "6: Chat"
-set $workspace7 "7: Misc 1"
-set $workspace8 "8: Misc 2" 
-set $workspace9 "9: Misc 3"
-set $workspace10 "10: Downloads"
+set $workspace1 "01"
+set $workspace2 "02"
+set $workspace3 "03"
+set $workspace4 "04"
+set $workspace5 "05"
+set $workspace6 "06"
+set $workspace7 "07"
+set $workspace8 "08" 
+set $workspace9 "09"
+set $workspace10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
