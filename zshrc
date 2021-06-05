@@ -31,7 +31,7 @@ neofetch
 #set -o vi
 
 # Alias
-alias update="sudo pacman -Syuu; yay; antigen update; nvim +PlugUpdate +qa"
+alias update="sudo pacman -Syuu; paru; antigen update; nvim +PlugUpdate +qa"
 alias zathura="zathura --config-dir=~/.cache/wal"
 alias lockscreen="~/Dotfiles/Scripts/lockscreen.sh"
 
