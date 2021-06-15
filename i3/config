@@ -199,3 +199,7 @@ bindsym $mod+Control+F3 exec --no-startup-id mpc next
 
 # Screenshot
 bindsym $mod+s exec "flameshot gui -p ~/Media/Pictures/Screenshots"
+
+# Vertical and Horizontal splitting
+bindsym $mod+v split v
+bindsym $mod+h split h
