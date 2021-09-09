@@ -18,8 +18,11 @@ Plug 'ap/vim-css-color'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 Plug 'lervag/vimtex'
+Plug 'neovimhaskell/haskell-vim'
+Plug 'alx741/vim-hindent'
+Plug 'dense-analysis/ale'
 call plug#end()
 
 " Coc.nvim
@@ -62,3 +65,10 @@ autocmd BufNewFile,BufRead *.fo set syntax=fasto
 " Nerdtree
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" haskell-vim
+let g:haskell_indent_case_alternative = 1
+
+" ale
+let g:ale_linters = {}
+let g:ale_linters.haskell = ['hlint']
