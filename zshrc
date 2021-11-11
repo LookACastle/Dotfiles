@@ -38,3 +38,4 @@ alias lockscreen="~/Dotfiles/Scripts/lockscreen.sh"
 # Enviroment variables
 export EDITOR=nvim
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/home/lookacastle/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/lookacastle/.antigen/bundles/robbyrussell/oh-my-zsh/lib:/home/lookacastle/.antigen/bundles/zsh-users/zsh-syntax-highlighting:/home/lookacastle/.local/bin

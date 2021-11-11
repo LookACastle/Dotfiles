@@ -38,3 +38,5 @@
 *color7: 			#eee8d5
 *color15: 			#fdf6e3
 
+!! Set DPI
+Xft.dpi: 96

@@ -1,6 +1,11 @@
 " General
 set nocompatible
 filetype on  
+set smarttab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
 set number
 set linebreak
 syntax on
