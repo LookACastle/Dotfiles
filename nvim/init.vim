@@ -15,7 +15,6 @@ call plug#begin()
 " Plugins
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'dylanaraps/wal'
 Plug 'vim-syntastic/syntastic'
 Plug 'fsharp/vim-fsharp'
 Plug 'ap/vim-css-color'
@@ -27,6 +26,7 @@ Plug 'lervag/vimtex'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'alx741/vim-hindent'
 Plug 'dense-analysis/ale'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 call plug#end()
 
 " Coc.nvim
@@ -52,8 +52,19 @@ endfunction
 
 
 
-" Colourscheme 
-colorscheme wal
+" Colourscheme
+lua << EOF
+require("catppuccin").setup({
+    flavour = "mocha", -- latte, frappe, macchiato, mocha
+    background = { -- :h background
+        light = "latte",
+        dark = "mocha",
+    },
+    transparent_background = true,
+})
+vim.cmd.colorscheme "catppuccin"
+EOF
+colorscheme catppuccin
 
 " Airline
 let g:airline_powerline_fonts = 1
