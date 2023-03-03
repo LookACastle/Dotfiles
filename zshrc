@@ -31,11 +31,12 @@ neofetch
 #set -o vi
 
 # Alias
-alias update="sudo pacman -Syuu; paru; antigen update; nvim +PlugUpdate +qa"
+alias update="sudo pacman -Syuu; paru; antigen update; nvim +PlugUpdate +qa; doom up"
 alias zathura="zathura --config-dir=~/.cache/wal"
 alias lockscreen="~/Dotfiles/Scripts/lockscreen.sh"
 
 # Enviroment variables
 export EDITOR=nvim
+export DOOMDIR=$HOME/Dotfiles/doom.d
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/home/lookacastle/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/lookacastle/.antigen/bundles/robbyrussell/oh-my-zsh/lib:/home/lookacastle/.antigen/bundles/zsh-users/zsh-syntax-highlighting:/home/lookacastle/.local/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:$HOME/.local/bin:$HOME/.emacs.d/bin:
