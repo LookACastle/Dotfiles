@@ -24,10 +24,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 
 # Eyecandy
-neofetch
-
-# Set vi-mode
-#set -o vi
+nitch
 
 # Alias
 alias update="sudo pacman -Syuu; paru; antigen update; nvim +PlugUpdate +qa; doom up"
