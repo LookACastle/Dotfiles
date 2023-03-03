@@ -48,7 +48,7 @@ label-focused-padding = 1
 
 label-unfocused-padding = 1
 
-label-urgent-background = #ff0000
+label-urgent-background = #F38BA8
 
 [module/mpd]
 type = internal/mpd

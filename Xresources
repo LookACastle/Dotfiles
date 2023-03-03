@@ -1,42 +1,38 @@
-!---------------------------------------------------------
-!Colours, credit https://gist.github.com/yevgenko/1167205
-!---------------------------------------------------------
-*background: 			#002b36
-*foreground: 			#657b83
-*pointerColorBackground: 	#586e75
-*pointerColorForeground: 	#93a1a1
+!Catppuccin Mocha
+*background: #1E1E2E
+*foreground: #CDD6F4
 
-!! black dark/light
-*color0: 			#073642
-*color8: 			#002b36
+! black
+*color0: #45475A
+*color8: #585B70
 
-!! red dark/light
-*color1: 			#dc322f
-*color9: 			#cb4b16
+! red
+*color1: #F38BA8
+*color9: #F38BA8
 
-!! green dark/light
-*color2: 			#859900
-*color10:			#586e75
+! green
+*color2: #A6E3A1
+*color10: #A6E3A1
 
-!! yellow dark/light
-*color3: 			#b58900
-*color11: 			#657b83
+! yellow
+*color3: #F9E2AF
+*color11: #F9E2AF
 
-!! blue dark/light
-*color4: 			#268bd2
-*color12: 			#839496
+! blue
+*color4: #89B4FA
+*color12: #89B4FA
 
-!! magenta dark/light
-*color5: 			#d33682
-*color13: 			#6c71c4
+! magenta
+*color5: #F5C2E7
+*color13: #F5C2E7
 
-!! cyan dark/light
-*color6: 			#2aa198
-*color14: 			#93a1a1
+! cyan
+*color6: #94E2D5
+*color14: #94E2D5
 
-!! white dark/light
-*color7: 			#eee8d5
-*color15: 			#fdf6e3
+! white
+*color7: #BAC2DE
+*color15: #A6ADC8
 
 !! Set DPI
 Xft.dpi: 96
