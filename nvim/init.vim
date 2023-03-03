@@ -8,6 +8,7 @@ set softtabstop=2
 set expandtab
 set number
 set linebreak
+set mouse= "Mouse does not enter any mode
 syntax on
 
 call plug#begin()
@@ -49,8 +50,6 @@ function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
-
 
 " Colourscheme
 lua << EOF
