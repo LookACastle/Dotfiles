@@ -151,7 +151,7 @@ exec_always xrandr --output DisplayPort-0 --off --output DVI-D-0 --mode 1920x120
 exec --no-startup-id i3-msg 'workspace $workspace2; workspace $workspace1'
 exec --no-startup-id fcitx 
 exec_always pkill polybar; ${HOME}/Dotfiles/Scripts/launchPolybar.sh
-exec_always feh --bg-scale /home/lookacastle/wallpaper.png
+exec_always feh --bg-scale /home/lookacastle/.background
 exec_always pkill dunst; dunst -conf ~/Dotfiles/dunstrc
 exec_always pkill glava; cp -f ~/Dotfiles/bars.glsl ~/.config/glava/bars.glsl; glava --desktop
 
