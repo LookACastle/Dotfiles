@@ -145,6 +145,7 @@ exec --no-startup-id copyq
 exec --no-startup-id fcitx 
 #Get glava setup when monitors arrive
 #Set up cool background
+exec_always "pkill waybar; waybar -c ~/Dotfiles/waybar/config -s ~/Dotfiles/waybar/style.css"
 exec_always "pkill mako; mako -c ~/Dotfiles/mako.conf"
 
 # Disable focus follows mouse 
@@ -205,7 +206,3 @@ input * {
 # Screen layout
 output DVI-D-1 pos 0 0 res 1920x1200
 output DVI-D-2 pos 1920 0 res 1920x1080
-# Bar
-bar {
-    swaybar_command waybar
-}
