@@ -10,9 +10,34 @@
     "sway/workspaces": {
         "disable-scroll": false,
         "all-outputs": false,
-        "format": "{name} ",
+        "format": "{icon} ",
         "disable-scroll-wraparound": true,
-        "enable-bar-scroll": true
+        "enable-bar-scroll": true,
+        "sort-by-number": true,
+        "format-icons": {
+             "1": "一",
+             "2": "二",
+             "3": "三",
+             "4": "四",
+             "5": "五",
+             "6": "六",
+             "7": "七",
+             "8": "八",
+             "9": "九",
+             "0": "十",
+             "F1": "地",
+             "F2": "水",
+             "F3": "火",
+             "F4": "風",
+             "F5": "北",
+             "F6": "南",
+             "F7": "東",
+             "F8": "西",
+             "F9": "空",
+             "F10": "日",
+             "F11": "月",
+             "F12": "星",
+         }
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
