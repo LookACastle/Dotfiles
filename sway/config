@@ -192,6 +192,10 @@ bindsym $mod+s exec "flameshot gui -p ~/Media/Pictures/Screenshots"
 # Eng-Eng dict
 bindsym $mod+Shift+d exec --no-startup-id ~/Dotfiles/Scripts/wordLookup.sh
 
+# Vertical/Horizontal split
+bindsym $mod+v split v
+bindsym $mod+h split h
+
 # Keyboard layout
 input * {
     xkb_layout "dk"
