@@ -28,11 +28,11 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     },
     "cpu": {
-        "format": "CPU: {usage}%",
+        "format": "CPU:{usage}%",
         "tooltip": true
     },
     "memory": {
-        "format": "RAM: {}%",
+        "format": "RAM:{}%",
         "tooltip": true
     },
     "network": {
