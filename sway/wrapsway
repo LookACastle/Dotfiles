@@ -1,0 +1,20 @@
+#!/bin/sh
+
+cd ~
+
+# Get japanese input working
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export SDL_IM_MODULE=fcitx
+export GLFW_IM_MODULE=fcitx
+
+# We're on Sway
+export XDG_CURRENT_DESKTOP=sway
+export XDG_SESSION_DESKTOP=sway
+
+# Enable application specific wayland envvars
+export MOZ_ENABLE_WAYLAND=1
+
+# Start!
+exec sway 
