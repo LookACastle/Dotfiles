@@ -203,6 +203,9 @@ input * {
     xkb_variant "nodeadkeys"
 }
 
+# Cursor theme
+seat seat0 xcursor_theme breeze_cursors 24
+
 # Screen layout
 output DVI-D-1 pos 0 0 res 1920x1200
 output DVI-D-2 pos 1920 0 res 1920x1080
