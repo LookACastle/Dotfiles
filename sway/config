@@ -188,7 +188,7 @@ bindsym $mod+Control+F3 exec --no-startup-id mpc next
 
 # Screenshot
 for_window [app_id="flameshot"] border pixel 0, floating enable, fullscreen disable, move absolute position 0 0
-bindsym $mod+s exec "flameshot gui -p ~/Media/Pictures/Screenshots"
+bindsym $mod+s exec "flameshot gui"
 
 # Eng-Eng dict
 bindsym $mod+Shift+d exec --no-startup-id ~/Dotfiles/Scripts/wordLookup.sh
