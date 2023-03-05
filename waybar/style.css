@@ -28,6 +28,10 @@ tooltip {
     background: rgba(205, 214, 244, 0.5);
 }
 
+#workspaces button.urgent {
+    background: rgba(235, 160, 172, 0.5);
+}
+
 @keyframes blink {
     to {
         background-color: #ffffff;
