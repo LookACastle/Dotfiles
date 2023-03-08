@@ -1,4 +1,10 @@
+# https://wiki.archlinux.org/title/Sway#Configuration says I have to do this
+include /etc/sway/config.d/*
+
+# Set the mod key
 set $mod Mod4
+
+# Set a system font
 font pango:System San Fransisco Display 11
 
 # Inform SystemD that we're sway
@@ -141,10 +147,7 @@ bindsym $mod+r mode "resize"
 # Startup programs
 exec --no-startup-id fcitx5 -d
 exec --no-startup-id gammastep -c ~/Dotfiles/redshift.conf
-exec --no-startup-id copyq
 exec --no-startup-id fcitx 
-#Get glava setup when monitors arrive
-#Set up cool background
 exec_always "pkill waybar; waybar -c ~/Dotfiles/waybar/config -s ~/Dotfiles/waybar/style.css"
 exec_always "pkill mako; mako -c ~/Dotfiles/mako.conf"
 
@@ -207,5 +210,5 @@ input * {
 seat seat0 xcursor_theme breeze_cursors 24
 
 # Screen layout
-output DVI-D-1 pos 0 0 res 1920x1200
-output DVI-D-2 pos 1920 0 res 1920x1080
+output DP-2 pos 0 0 res 2560x1440@144.006Hz adaptive_sync on
+output DP-1 pos 2560 0 res 2560x1440@144.006Hz adaptive_sync on 
