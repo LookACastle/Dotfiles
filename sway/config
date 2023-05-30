@@ -168,7 +168,7 @@ bindsym $mod+Return exec alacritty --config-file ~/Dotfiles/alacritty.yml
 bindsym $mod+Shift+q kill
 
 # start rofi
-bindsym $mod+d exec rofi -theme "~/Dotfiles/rofi.rasi" -show run 
+bindsym $mod+d exec rofi -theme "~/Dotfiles/rofi.rasi" -show drun  
 
 # Disable/enable gaps
 bindsym $mod+Shift+t gaps inner all set 0
