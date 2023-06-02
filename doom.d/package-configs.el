@@ -4,3 +4,6 @@
 
 (after! projectile
   (load-file (concat doom-user-dir "/package-configs/projectile.el")))
+
+(after! evil-snipe
+  (load-file (concat doom-user-dir "/package-configs/evil-snipe.el")))
