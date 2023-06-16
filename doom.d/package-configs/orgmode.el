@@ -5,3 +5,4 @@
 (global-set-key "\C-ca" 'org-agenda)
 
 (setq org-directory "~/Org/")
+(setq org-agenda-files "~/Org/")
