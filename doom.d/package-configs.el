@@ -13,3 +13,6 @@
 
 (after! treemacs
   (load-file (concat doom-user-dir "/package-configs/treemacs.el")))
+
+(after! latex
+  (load-file (concat doom-user-dir "/package-configs/latex.el")))
