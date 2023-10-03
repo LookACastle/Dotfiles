@@ -154,6 +154,9 @@ exec_always "pkill mako; mako -c ~/Dotfiles/mako.conf"
 # Disable focus follows mouse 
 focus_follows_mouse no
 
+# Disable mouse warp
+mouse_warping none 
+
 # Disable borders
 default_border pixel 0
 
