@@ -2,8 +2,8 @@
 
 ; This needs to be automated at some point, it works for now though
 
-(after! org-mode
-  (load-file (concat doom-user-dir "/package-configs/orgmode.el")))
+(after! org
+  (load-file (concat doom-user-dir "/package-configs/org.el")))
 
 (after! projectile
   (load-file (concat doom-user-dir "/package-configs/projectile.el")))
