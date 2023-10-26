@@ -39,6 +39,6 @@ tooltip {
     }
 }
 
-#clock, #cpu, #memory, #network {
+#battery, #clock, #cpu, #memory, #network {
     padding: 0 4px;
 }

@@ -5,7 +5,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["mpd"],
-    "modules-right": ["network", "cpu", "memory", "clock"],
+    "modules-right": ["network", "battery", "cpu", "memory", "clock"],
     // Modules configuration
     "sway/workspaces": {
         "disable-scroll": false,
@@ -51,15 +51,6 @@
         "interval": 1,
         "locale": "da_DK.UTF-8",
         "format": "{:%Y-%m-%d %H:%M:%S}",
-        "tooltip-format": "<tt>{calendar}</tt>",
-        "calendar": {
-            "mode"          : "month",
-            "weeks-pos"     : "left",
-            "on-scroll"     : 1,
-            "format": {
-                "weeks":      "<span color='#a6e3a1'><b>{:%W}</b></span>",
-            }
-        }
     },
     "cpu": {
         "format": "CPU:{usage}%",
@@ -75,5 +66,9 @@
         "format-wifi": "{essid}",
         "format-disconnected": "Disconnected"
     },
+    "battery": {
+    	"interval": 60,
+	"format": "BAT:{capacity}%"
+    }
 }
 
