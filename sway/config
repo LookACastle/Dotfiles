@@ -164,14 +164,13 @@ default_border pixel 0
 gaps inner 12 
 smart_gaps on
 
-# start a terminal
-bindsym $mod+Return exec alacritty --config-file ~/Dotfiles/alacritty.yml
-
-# kill focused window
+# Kill focused window
 bindsym $mod+Shift+q kill
 
-# start rofi
+# Application hotkeys
 bindsym $mod+d exec rofi -theme "~/Dotfiles/rofi.rasi" -show drun  
+bindsym $mod+n exec emacsclient -c
+bindsym $mod+Return exec alacritty --config-file ~/Dotfiles/alacritty.yml
 
 # Disable/enable gaps
 bindsym $mod+Shift+t gaps inner all set 0
