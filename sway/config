@@ -212,5 +212,5 @@ input * {
 seat seat0 xcursor_theme breeze_cursors 24
 
 # Screen layout
-output DP-2 pos 0 0 res 2560x1440@144.006Hz adaptive_sync on
+output DP-3 pos 0 0 res 2560x1440@144.006Hz adaptive_sync on
 output DP-1 pos 2560 0 res 2560x1440@144.006Hz adaptive_sync on 
