@@ -146,7 +146,8 @@ bindsym $mod+r mode "resize"
 
 # Startup programs
 exec --no-startup-id fcitx5 -d
-exec --no-startup-id gammastep -c ~/Dotfiles/redshift.conf
+#exec --no-startup-id gammastep -c ~/Dotfiles/redshift.conf
+# Gammastep causes stutters for some reason.
 exec --no-startup-id fcitx 
 exec_always "pkill waybar; waybar -c ~/Dotfiles/waybar/config -s ~/Dotfiles/waybar/style.css"
 exec_always "pkill mako; mako -c ~/Dotfiles/mako.conf"
