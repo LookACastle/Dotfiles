@@ -16,3 +16,6 @@
 
 (after! latex
   (load-file (concat doom-user-dir "/package-configs/latex.el")))
+
+(after! vue-mode
+  (load-file (concat doom-user-dir "/package-configs/vue-mode.el")))
