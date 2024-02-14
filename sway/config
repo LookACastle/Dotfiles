@@ -214,4 +214,4 @@ input * {
 seat seat0 xcursor_theme breeze_cursors 24
 
 # Screen layout
-include ~/.outputs
+include ~/.displays
