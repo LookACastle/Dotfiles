@@ -27,6 +27,10 @@
 (setq doom-font (font-spec :family "M PLUS 1 CODE" :size 18))
 (setq doom-big-font (font-spec :family "M PLUS 1 CODE" :size 24))
 (setq default-directory (getenv "HOME"))
+(defun frame-opacity (frame)
+    (set-frame-parameter frame 'alpha-background 70))
+(frame-opacity nil)
+(add-to-list 'after-make-frame-functions 'frame-opacity)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
