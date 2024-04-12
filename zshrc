@@ -14,6 +14,7 @@ compinit
 source /usr/share/zsh/share/antigen.zsh
 
 # Theme
+zstyle ':omz:alpha:lib:git' async-prompt no #Until prompt works again
 antigen use oh-my-zsh
 antigen theme ys 
 
@@ -27,8 +28,8 @@ antigen apply
 nitch
 
 # Alias
-alias update="sudo pacman -Syuu; paru; antigen update; nvim +PlugUpdate +qa; doom up"
-alias zathura="zathura --config-dir=~/.cache/wal"
+alias update="sudo pacman -Syuu && paru && antigen update && nvim +PlugUpdate +qa && doom up"
+alias zathura="zathura"
 alias lockscreen="~/Dotfiles/Scripts/lockscreen.sh"
 
 # Enviroment variables
