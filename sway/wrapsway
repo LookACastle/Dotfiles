@@ -13,8 +13,13 @@ export GLFW_IM_MODULE=fcitx
 export XDG_CURRENT_DESKTOP=sway
 export XDG_SESSION_DESKTOP=sway
 
+# We're on Wayland
+export SDL_VIDEODRIVER=wayland
+export QT_QPA_PLATFORM=wayland
+
 # Enable application specific wayland envvars
 export MOZ_ENABLE_WAYLAND=1
+export _JAVA_AWT_WM_NONPARENTING=1
 
 # Start!
 exec sway 
