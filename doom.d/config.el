@@ -27,6 +27,7 @@
 (setq doom-font (font-spec :family "M PLUS 1 CODE" :size 18))
 (setq doom-big-font (font-spec :family "M PLUS 1 CODE" :size 24))
 (setq default-directory (getenv "HOME"))
+(setq ispell-dictionary "british")
 (defun frame-opacity (frame)
     (set-frame-parameter frame 'alpha-background 70))
 (frame-opacity nil)
