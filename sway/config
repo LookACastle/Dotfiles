@@ -150,6 +150,7 @@ exec --no-startup-id fcitx5 -d
 exec --no-startup-id wlsunset -T 5500 -t 3000  -l 55.7 -L 12.5
 # Gammastep causes stutters for some reason. wlsunset is a temporary fix - I like the config file of gammastep better (and that it is compatible with redshift on Xorg too
 exec --no-startup-id fcitx 
+exec --no-startup-id flameshot 
 exec_always "pkill waybar; waybar -c ~/Dotfiles/waybar/config -s ~/Dotfiles/waybar/style.css"
 exec_always "pkill mako; mako -c ~/Dotfiles/mako.conf"
 
