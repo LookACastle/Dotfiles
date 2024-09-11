@@ -8,7 +8,9 @@ set $mod Mod4
 font pango:System San Fransisco Display 11
 
 # Inform SystemD that we're sway
-exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
