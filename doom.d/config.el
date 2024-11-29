@@ -29,7 +29,7 @@
 (setq default-directory (getenv "HOME"))
 (setq ispell-dictionary "british")
 (defun frame-opacity (frame)
-    (set-frame-parameter frame 'alpha-background 70))
+    (set-frame-parameter frame 'alpha-background 50))
 (frame-opacity nil)
 (add-to-list 'after-make-frame-functions 'frame-opacity)
 
