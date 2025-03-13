@@ -214,7 +214,8 @@ input * {
 }
 
 # Cursor theme
-seat seat0 xcursor_theme breeze_cursors 24
+seat seat0 xcursor_theme Nordzy-cursors 24
+seat seat0 hide_cursor when-typing disable
 
 # Screen layout
 include ~/.displays
