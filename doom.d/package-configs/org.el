@@ -5,7 +5,7 @@
 (global-set-key "\C-ca" 'org-agenda)
 
 (setq org-directory "~/Org/")
-(setq org-agenda-files (directory-files-recursively "~/org/" "\\.org$"))
+(setq org-agenda-files (directory-files-recursively "~/Org/" "\\.org$"))
 (setq org-agenda-todo-ignore-scheduled 'future)
 (setq org-agenda-todo-ignore-deadlines 7)
 (setq org-agenda-tags-todo-honor-ignore-options t)
