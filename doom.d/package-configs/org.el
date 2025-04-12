@@ -6,10 +6,13 @@
 
 (setq org-directory "~/Org/")
 (setq org-agenda-files (directory-files-recursively "~/Org/" "\\.org$"))
-(setq org-agenda-todo-ignore-scheduled 'future)
-(setq org-agenda-tags-todo-honor-ignore-options t)
-(setq org-agenda-todo-list-sublevels f)
+(setq org-agenda-todo-ignore-scheduled 'future) ; Ignore tasks scheduled for the future
+(setq org-agenda-skip-scheduled-if-done t) ; Don't show scheduled tasks in agenda if done
+(setq org-agenda-tags-todo-honor-ignore-options t) ; Make global todo honor ignore options
+(setq org-agenda-todo-list-sublevels nil) ; Make subtasks not shown in todo list
+
+(add-hook 'org-trigger-hook 'save-buffer) ; Save buffer upon completing todo
 
 (setq org-roam-dailies-capture-templates
-      '(("d" "default" entry "* %<%I:%M %p>: %?"
+      '(("d" "default" entry "* %<%H:%M>: %?"
          :if-new (file+head "%<%Y-%m-%d>.org" "#+title: %<%Y-%m-%d>\n"))))
