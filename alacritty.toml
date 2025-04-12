@@ -633,7 +633,7 @@ save_to_clipboard = false
 semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 
 [window]
-opacity = 0.5
+opacity = 0.8
 decorations = "none"
 dynamic_padding = false
 startup_mode = "Windowed"
