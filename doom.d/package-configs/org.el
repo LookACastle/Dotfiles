@@ -9,3 +9,7 @@
 (setq org-agenda-todo-ignore-scheduled 'future)
 (setq org-agenda-todo-ignore-deadlines 7)
 (setq org-agenda-tags-todo-honor-ignore-options t)
+
+(setq org-roam-dailies-capture-templates
+      '(("d" "default" entry "* %<%I:%M %p>: %?"
+         :if-new (file+head "%<%Y-%m-%d>.org" "#+title: %<%Y-%m-%d>\n"))))
