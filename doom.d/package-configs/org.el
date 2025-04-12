@@ -4,7 +4,7 @@
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 
-(setq org-directory "~/org/")
+(setq org-directory "~/Org/")
 (setq org-agenda-files (directory-files-recursively "~/org/" "\\.org$"))
 (setq org-agenda-todo-ignore-scheduled 'future)
 (setq org-agenda-todo-ignore-deadlines 7)
