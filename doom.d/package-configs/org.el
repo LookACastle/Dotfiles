@@ -7,8 +7,8 @@
 (setq org-directory "~/Org/")
 (setq org-agenda-files (directory-files-recursively "~/Org/" "\\.org$"))
 (setq org-agenda-todo-ignore-scheduled 'future)
-(setq org-agenda-todo-ignore-deadlines 7)
 (setq org-agenda-tags-todo-honor-ignore-options t)
+(setq org-agenda-todo-list-sublevels f)
 
 (setq org-roam-dailies-capture-templates
       '(("d" "default" entry "* %<%I:%M %p>: %?"
