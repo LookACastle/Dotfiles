@@ -11,7 +11,9 @@
 (setq org-agenda-tags-todo-honor-ignore-options t) ; Make global todo honor ignore options
 (setq org-agenda-todo-list-sublevels nil) ; Make subtasks not shown in todo list
 
-(add-hook 'org-after-todo-state-change-hook 'save-buffer) ; Save buffer upon completing todo
+; Save buffer upon completing todo
+(add-hook 'org-trigger-hook 'save-buffer)
+(add-hook 'org-after-todo-state-change-hook 'save-buffer)
 
 (setq org-roam-dailies-capture-templates
       '(("d" "default" entry "* %<%H:%M>: %?"
