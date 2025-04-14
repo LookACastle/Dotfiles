@@ -4,7 +4,6 @@
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 
-(setq org-directory "~/Org/")
 (setq org-agenda-files (directory-files-recursively "~/Org/" "\\.org$"))
 (setq org-agenda-todo-ignore-scheduled 'future) ; Ignore tasks scheduled for the future
 (setq org-agenda-skip-scheduled-if-done t) ; Don't show scheduled tasks in agenda if done

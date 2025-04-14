@@ -2,6 +2,7 @@
 
 ; This needs to be automated at some point, it works for now though
 
+(setq org-directory "~/Org/") ; Set directory var before '!after'
 (after! org
   (load-file (concat doom-user-dir "/package-configs/org.el")))
 
