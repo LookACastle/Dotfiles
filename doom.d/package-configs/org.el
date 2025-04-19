@@ -11,8 +11,11 @@
 (setq org-agenda-todo-list-sublevels nil) ; Make subtasks not shown in todo list
 
 ; Save buffer upon completing todo
-(add-hook 'org-trigger-hook 'save-buffer)
-(add-hook 'org-after-todo-state-change-hook 'save-buffer)
+(advice-add 'org-deadline       :after (lambda (&rest _) (funcall #'org-save-all-org-buffers)))
+(advice-add 'org-schedule       :after (lambda (&rest _) (funcall #'org-save-all-org-buffers)))
+(advice-add 'org-store-log-note :after (lambda (&rest _) (funcall #'org-save-all-org-buffers)))
+(advice-add 'org-todo           :after (lambda (&rest _) (funcall #'org-save-all-org-buffers)))
+
 
 ; Better daily templates
 (setq org-roam-dailies-capture-templates
