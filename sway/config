@@ -175,7 +175,7 @@ bindsym $mod+Shift+q kill
 # Application hotkeys
 bindsym $mod+d exec rofi -theme "~/Dotfiles/rofi.rasi" -show drun  
 bindsym $mod+n exec emacsclient -c
-bindsym $mod+Return exec alacritty --config-file ~/Dotfiles/alacritty.toml
+bindsym $mod+Return exec kitty --config ~/Dotfiles/kitty.conf
 
 # Disable/enable gaps
 bindsym $mod+Shift+t gaps inner all set 0
