@@ -40,7 +40,7 @@ Row {
             visible: QsWindow.window?.screen.name == modelData.monitor?.name
             width: 24
             height: parent.parent.height
-            color: modelData.active ? "#4a9eff" : parent.parent.color
+            color: modelData.active ? "#4a9eff" : "transparent"
 
             MouseArea {
                 anchors.fill: parent

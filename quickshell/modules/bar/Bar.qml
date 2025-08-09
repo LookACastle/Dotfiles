@@ -16,6 +16,7 @@ Variants {
         PanelWindow {
             screen: scope.modelData
             id: panel
+            color: "transparent"
 
             anchors {
                 top: true
@@ -23,12 +24,12 @@ Variants {
                 right: true
             }
 
-            implicitHeight: screen.height * 0.025
+            implicitHeight: screen.height * 0.022
 
             Rectangle {
                 id: bar
                 anchors.fill: parent
-                color: withAlpha("#1a1a1a", 1)
+                color: withAlpha("#1a1a1a", 0.9)
 
                 Workspaces {
                     id: workspaces
