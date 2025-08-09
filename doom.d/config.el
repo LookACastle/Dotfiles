@@ -24,6 +24,7 @@
 ;; wasn't installed correctly. Font issues are rarely Doom issues!
 
 (setq doom-theme 'catppuccin)
+(setq catppuccin-flavor 'mocha)
 (setq doom-font (font-spec :family "M PLUS 1 CODE" :size 18))
 (setq doom-big-font (font-spec :family "M PLUS 1 CODE" :size 24))
 (setq default-directory (getenv "HOME"))

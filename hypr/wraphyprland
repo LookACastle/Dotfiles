@@ -1,17 +1,16 @@
 #!/bin/sh
 
-cd ~
+cd ~ || exit
 
 # Get japanese input working
-export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export SDL_IM_MODULE=fcitx
 export GLFW_IM_MODULE=fcitx
 
-# We're on Sway
-export XDG_CURRENT_DESKTOP=sway
-export XDG_SESSION_DESKTOP=sway
+# We're on hyprland
+export XDG_CURRENT_DESKTOP=Hyprland
+export XDG_SESSION_DESKTOP=Hyprland
 
 # We're on Wayland
 export SDL_VIDEODRIVER=wayland
@@ -22,4 +21,4 @@ export MOZ_ENABLE_WAYLAND=1
 export _JAVA_AWT_WM_NONPARENTING=1
 
 # Start!
-exec sway 
+exec hyprland
