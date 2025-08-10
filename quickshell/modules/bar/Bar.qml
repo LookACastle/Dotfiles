@@ -1,13 +1,10 @@
 import QtQuick
 import Quickshell
 import "components"
+import qs.config
 
 Variants {
     model: Quickshell.screens
-
-    function withAlpha(color: color, alpha: real): color {
-        return Qt.rgba(color.r, color.g, color.b, alpha);
-    }
 
     Scope {
         id: scope
@@ -29,7 +26,7 @@ Variants {
             Rectangle {
                 id: bar
                 anchors.fill: parent
-                color: withAlpha("#1a1a1a", 0.9)
+                color: Appearance.withAlpha(Appearance.backgroundColour, Appearance.baseTransparency)
 
                 Workspaces {
                     id: workspaces

@@ -1,6 +1,7 @@
 import QtQuick
 import Quickshell
 import Quickshell.Hyprland
+import qs.config
 
 Text {
     id: root
@@ -26,5 +27,12 @@ Text {
     Component.onCompleted: {
         var now = new Date()
         clock.currentTime = Qt.formatDateTime(now, "yyyy-MM-dd hh:mm:ss")
+    }
+
+    MouseArea {
+          anchors.fill: parent
+          onClicked: {
+                Appearance.changeWallpaper("/home/lookacastle/Downloads/vid4.webp")
+          }
     }
 }
