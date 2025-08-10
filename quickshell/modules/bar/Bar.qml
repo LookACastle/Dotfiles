@@ -40,6 +40,16 @@ Variants {
                     }
                 }
 
+                Battery {
+                    id: battery
+
+                    anchors {
+                        right: clock.left
+                        verticalCenter: parent.verticalCenter
+                        rightMargin: 16
+                    }
+                }
+
                 Clock {
                     id: clock
 
