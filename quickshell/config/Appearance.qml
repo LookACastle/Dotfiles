@@ -8,6 +8,8 @@ import qs.common
 Singleton {
     id: root
     readonly property real baseTransparency: 0.9
+    readonly property int normalFontsize: 20
+    readonly property string normalFontfamily: "M PLUS 1 CODE"
 
     // A lot of the colour logic has been taken from
     // https://github.com/bbedward/DankMaterialShell/blob/master/Common/Colors.qml

@@ -1,6 +1,7 @@
 import QtQuick
 import Quickshell
 import Quickshell.Services.UPower
+import qs.config
 
 Text {
     id: root
@@ -13,7 +14,7 @@ Text {
 
     visible: available
     text: percentage
-    color: "#ffffff"
-    font.pixelSize: 20
-    font.family: "M PLUS 1 CODE"
+    color: Appearance.surfaceText
+    font.pixelSize: Appearance.normalFontsize
+    font.family: Appearance.normalFontfamily
 }

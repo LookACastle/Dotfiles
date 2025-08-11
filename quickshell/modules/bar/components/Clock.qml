@@ -9,9 +9,9 @@ Text {
     property string currentTime: ""
 
     text: currentTime
-    color: "#ffffff"
-    font.pixelSize: 20
-    font.family: "M PLUS 1 CODE"
+    color: Appearance.surfaceText
+    font.pixelSize: Appearance.normalFontsize
+    font.family: Appearance.normalFontfamily
 
     Timer {
         interval: 1000 // miliseconds

@@ -1,6 +1,7 @@
 import QtQuick
 import Quickshell
 import Quickshell.Hyprland
+import qs.config
 
 Row {
     id: root
@@ -40,7 +41,7 @@ Row {
             visible: QsWindow.window?.screen.name == modelData.monitor?.name
             width: 24
             height: parent.parent.height
-            color: modelData.active ? "#4a9eff" : "transparent"
+            color: modelData.active ? Appearance.primary : "transparent"
 
             MouseArea {
                 anchors.fill: parent
@@ -50,16 +51,17 @@ Row {
             Text {
                 text: nameWorkspace(modelData.id)
                 anchors.centerIn: parent
-                color: "#ffffff"
-                font.pixelSize: 18
+                color: modelData.active ? Appearance.primaryText : Appearance.surfaceText
+                font.pixelSize: Appearance.normalFontsize
                 font.family: "M PLUS 1 CODE"
             }
         }
     }
+
     Text {
         visible: Hyprland.workspaces.length === 0
         text: "Quickshell detected no hyprland workspaces"
-        color: "#ffffff"
-        font.pixelSize: 12
+        color: Appearance.backgroundText
+        font.pixelSize: Appearance.normalFontsize
     }
 }
