@@ -53,7 +53,7 @@ Row {
                 anchors.centerIn: parent
                 color: modelData.active ? Appearance.primaryText : Appearance.surfaceText
                 font.pixelSize: Appearance.normalFontsize
-                font.family: "M PLUS 1 CODE"
+                font.family: Appearance.normalFontfamily
             }
         }
     }
@@ -61,7 +61,8 @@ Row {
     Text {
         visible: Hyprland.workspaces.length === 0
         text: "Quickshell detected no hyprland workspaces"
-        color: Appearance.backgroundText
+        color: Appearance.surfaceText
         font.pixelSize: Appearance.normalFontsize
+        font.family: Appearance.normalFontfamily
     }
 }

@@ -52,10 +52,6 @@ Singleton {
         return cur || fallback
     }
 
-    function withAlpha(color: color, alpha: real): color {
-        return Qt.rgba(color.r, color.g, color.b, alpha);
-    }
-
     Process {
         id: wallpaperChanger
         running: false

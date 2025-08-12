@@ -3,59 +3,42 @@ import Quickshell
 import "components"
 import qs.config
 
-Variants {
-    model: Quickshell.screens
+PanelWindow {
+    id: root
 
-    Scope {
-        id: scope
-        required property ShellScreen modelData
+    required property int thickness
+    color: "transparent"
+    implicitHeight: thickness
 
-        PanelWindow {
-            screen: scope.modelData
-            id: panel
-            color: "transparent"
+    Rectangle {
+        anchors.fill: parent
+        color: Qt.alpha(Appearance.backgroundColour, Appearance.baseTransparency)
+        Workspaces {
+            id: workspaces
 
             anchors {
-                top: true
-                left: true
-                right: true
+                left: parent.left
+                verticalCenter: parent.verticalCenter
             }
+        }
 
-            implicitHeight: screen.height * 0.022
+        Battery {
+            id: battery
 
-            Rectangle {
-                id: bar
-                anchors.fill: parent
-                color: Appearance.withAlpha(Appearance.backgroundColour, Appearance.baseTransparency)
+            anchors {
+                right: clock.left
+                verticalCenter: parent.verticalCenter
+                rightMargin: 16
+            }
+        }
 
-                Workspaces {
-                    id: workspaces
+        Clock {
+            id: clock
 
-                    anchors {
-                        left: parent.left
-                        verticalCenter: parent.verticalCenter
-                    }
-                }
-
-                Battery {
-                    id: battery
-
-                    anchors {
-                        right: clock.left
-                        verticalCenter: parent.verticalCenter
-                        rightMargin: 16
-                    }
-                }
-
-                Clock {
-                    id: clock
-
-                    anchors {
-                        right: parent.right
-                        verticalCenter: parent.verticalCenter
-                        rightMargin: 4
-                    }
-                }
+            anchors {
+                right: parent.right
+                verticalCenter: parent.verticalCenter
+                rightMargin: 4
             }
         }
     }

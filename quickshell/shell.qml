@@ -10,6 +10,6 @@ ShellRoot {
 
     Loader {
         active: true
-        sourceComponent: Bar {}
+        sourceComponent: Pane {}
     }
 }
