@@ -13,6 +13,7 @@ PanelWindow {
     Rectangle {
         anchors.fill: parent
         color: Qt.alpha(Appearance.backgroundColour, Appearance.baseTransparency)
+
         Workspaces {
             id: workspaces
 

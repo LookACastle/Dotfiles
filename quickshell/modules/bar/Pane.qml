@@ -12,8 +12,8 @@ Variants {
 
         required property ShellScreen modelData
 
-        Bar {
-            id: bar
+        TopBar {
+            id: topbar
 
             screen: scope.modelData
             thickness: scope.modelData.height * 0.02
@@ -22,6 +22,19 @@ Variants {
                 top: true
                 left: true
                 right: true
+            }
+        }
+
+        LeftBar {
+            id: leftbar
+
+            screen: scope.modelData
+            thickness: scope.modelData.height * 0.02
+
+            anchors {
+                top: true
+                bottom: true
+                left: true
             }
         }
 
