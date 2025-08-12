@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Effects
 import Quickshell
 import qs.config
+import qs.modules.widgets
 
 Item {
     id: root
