@@ -41,6 +41,7 @@ Variants {
         Border {
             id: border
 
+            screen: scope.modelData
             cornerSize: scope.modelData.height * 0.005
             thickness: scope.modelData.height * 0.003
             enabledTop: false

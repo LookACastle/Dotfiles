@@ -8,6 +8,7 @@ Item {
     id: root
 
     required property int cornerSize
+    required property ShellScreen screen
     required property int thickness
     property bool enabledTop: true
     property bool enabledBottom: true
@@ -17,6 +18,7 @@ Item {
     PanelWindow {
         id: topBorder
         color: "transparent"
+        screen: root.screen
         visible: enabledTop
 
         anchors {
@@ -36,6 +38,7 @@ Item {
     PanelWindow {
         id: bottomBorder
         color: "transparent"
+        screen: root.screen
         visible: enabledBottom
 
         anchors {
@@ -56,6 +59,7 @@ Item {
     PanelWindow {
         id: rightBorder
         color: "transparent"
+        screen: root.screen
         visible: enabledRight
 
        anchors {
@@ -76,6 +80,7 @@ Item {
     PanelWindow {
         id: leftBorder
         color: "transparent"
+        screen: root.screen
         visible: enabledLeft
 
         anchors {
@@ -98,6 +103,7 @@ Item {
         color: "transparent"
         implicitWidth: cornerSize
         implicitHeight: cornerSize
+        screen: root.screen
 
         anchors {
             top: topRectangle.bottom
@@ -117,6 +123,7 @@ Item {
         color: "transparent"
         implicitWidth: cornerSize
         implicitHeight: cornerSize
+        screen: root.screen
 
         anchors {
             top: topRectangle.bottom
@@ -136,6 +143,7 @@ Item {
         color: "transparent"
         implicitWidth: cornerSize
         implicitHeight: cornerSize
+        screen: root.screen
 
         anchors {
             bottom: bottomRectangle.top
@@ -155,6 +163,7 @@ Item {
         color: "transparent"
         implicitWidth: cornerSize
         implicitHeight: cornerSize
+        screen: root.screen
 
         anchors {
             bottom: bottomRectangle.top
