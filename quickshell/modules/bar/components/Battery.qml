@@ -9,16 +9,16 @@ Rectangle {
     property bool available: UPower.displayDevice.isLaptopBattery
     property var chargeState: UPower.displayDevice.state
     property bool isCharging: chargeState == UPowerDeviceState.Charging
-    property bool isPluggedIn: isCharging || chargeState == UPowerDeviceState.PendingCharge
+    property bool isFullyCharged: chargeState == UPowerDeviceState.FullyCharged
     property real percentage: UPower.displayDevice.percentage
 
     function rectangleColour() {
-        if (isPluggedIn && !isCharging) {
+        if (isFullyCharged) {
             return "transparent"
         } else if (percentage < 0.15 && !isCharging) {
             return Appearance.error
         } else if (isCharging) {
-            return Appearance.tertiary
+            return Appearance.secondary
         }
         return Appearance.primary
     }
