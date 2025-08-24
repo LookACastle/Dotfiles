@@ -33,7 +33,7 @@ Rectangle {
         text: qsTr("%1%").arg(Math.round(percentage * 100))
 
         anchors.centerIn: parent
-        color: Appearance.surfaceText
+        color: root.isCharging ? Appearance.primaryText : Appearance.surfaceText
         font.pixelSize: Appearance.normalFontsize
         font.family: Appearance.normalFontfamily
     }
