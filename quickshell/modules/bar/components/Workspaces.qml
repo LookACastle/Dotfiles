@@ -51,7 +51,7 @@ Row {
             Text {
                 text: nameWorkspace(modelData.id)
                 anchors.centerIn: parent
-                color: modelData.active ? Appearance.primaryText : Appearance.surfaceText
+                color: modelData.active || modelData.urgent ? Appearance.primaryText : Appearance.surfaceText
                 font.pixelSize: Appearance.normalFontsize
                 font.family: Appearance.normalFontfamily
             }
