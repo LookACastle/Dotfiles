@@ -15,8 +15,8 @@ zplug "zsh-users/zsh-syntax-highlighting"
 zplug "xwmx/astral", as:theme
 
 # Keybinds
-bindkey "${key[Up]}" up-line-or-search
-bindkey "${key[Down]}" down-line-or-search
+bindkey "^[[A" up-line-or-search
+bindkey "^[[B" down-line-or-search
 
 # Enviroment variables
 export EDITOR=nvim

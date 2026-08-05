@@ -1,7 +1,7 @@
 { pkgs, lib, inputs, config, ... }: {
   imports = [
     ./base-wayland.nix
-    ./flameshot.nix
+    ./satty.nix
     ./quickshell.nix
   ];
 

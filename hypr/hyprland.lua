@@ -16,12 +16,14 @@ end)
 
 -- Permissions
 hl.permission({ binary = "/nix/store/[a-z0-9]{32}-grim-[0-9.]*/bin/grim", type = "screencopy", mode = "allow" })
+hl.permission({ binary = "/usr/bin/grim", type = "screencopy", mode = "allow" })
 hl.permission({ binary = "/nix/store/[a-z0-9]{32}-xdg-desktop-portal-hyprland-[0-9.]*/libexec/.xdg-desktop-portal-hyprland-wrapped", type = "screencopy", mode = "allow" })
+hl.permission({ binary = "/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland", type = "screencopy", mode = "allow" })
 
 -- Keybinds
 hl.bind("SUPER + D", hl.dsp.exec_cmd("~/Dotfiles/Scripts/wordLookup.sh"))
 hl.bind("SUPER + N", hl.dsp.exec_cmd("emacsclient -c"))
-hl.bind("SUPER + S", hl.dsp.exec_cmd("flameshot gui"))
+hl.bind("SUPER + S", hl.dsp.exec_cmd("grim -o $(hyprctl monitors | awk '/Monitor/{mon=$2} /focused: yes/{print mon}') - | satty -f - --copy-command wl-copy -o \"~/Media/Pictures/Screenshots/%Y%m%d_%H%M%S.png\" --fullscreen"))
 hl.bind("SUPER + X", hl.dsp.exec_cmd("~/Dotfiles/Scripts/lockscreenWayland.sh"))
 hl.bind("SUPER + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind("SUPER + SHIFT + SPACE", hl.dsp.window.float({ action = "toggle" }))
@@ -154,19 +156,6 @@ hl.window_rule({
         title = "(.*Metastream.*)$",
     },
     opacity = "1.0 override",
-})
-
--- Flameshot fixes
-hl.window_rule({
-    name = "windowrule-5",
-    match = {
-        class = "(flameshot)",
-        title = "(flameshot)",
-    },
-    move = "(0) (0)",
-    pin = true,
-    fullscreen = true,
-    float = true,
 })
 
 -- Cursor
