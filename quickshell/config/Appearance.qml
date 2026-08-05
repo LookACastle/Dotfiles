@@ -56,7 +56,7 @@ Singleton {
         id: wallpaperChanger
         running: false
 
-        command: ["matugen", "-c", Paths.matugenConfig, "-v", "image", wallpaperPath, "--json", "hex", "source-color-index", "0"]
+        command: ["matugen", "-c", Paths.matugenConfig, "-v", "image", wallpaperPath, "--json", "hex", "--source-color-index", "0"]
 
         stdout: StdioCollector {
             id: matugenCollector
