@@ -21,4 +21,4 @@ export MOZ_ENABLE_WAYLAND=1
 export _JAVA_AWT_WM_NONPARENTING=1
 
 # Start!
-exec hyprland
+exec start-hyprland
