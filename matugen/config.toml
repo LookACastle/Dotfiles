@@ -1,0 +1,7 @@
+[config.wallpaper]
+command = "awww img --transition-type center {{ image }}"
+
+[templates.kitty]
+input_path = "~/Dotfiles/matugen/kitty-template.conf"
+output_path = "~/.config/kitty/themes/your-theme.conf"
+post_hook = "kitty +kitten themes --reload-in=all your-theme"
