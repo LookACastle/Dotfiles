@@ -13,7 +13,7 @@ bindkey "^[[B" down-line-or-search
 export EDITOR=nvim
 export DOOMDIR=$HOME/Dotfiles/doom.d
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
-export PATH=$PATH:$HOME/.local/bin:$HOME/.emacs.d/bin:
+export PATH=$PATH:$HOME/.local/bin:$HOME/.emacs.d/bin:$HOME/.config/emacs/bin
 
 # Zplug
 if [[ $(grep '^NAME=' /etc/os-release | cut -d\= -f2) != "NixOS" ]] then
