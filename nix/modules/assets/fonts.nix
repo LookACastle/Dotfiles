@@ -3,15 +3,20 @@
 {
   fonts = {
     enableDefaultPackages = true;
+    enableGhostscriptFonts = true;
 
     packages = with pkgs; [
-      fira-code-symbols
-      font-awesome
-      mplus-outline-fonts.githubRelease
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-color-emoji
-    ];
+      liberation_ttf
+      fira-code
+      fira-code-symbols
+      mplus-outline-fonts.githubRelease
+      dina-font
+      proggyfonts
+      symbola
+    ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 
     fontconfig = {
       defaultFonts = {
@@ -19,7 +24,6 @@
         sansSerif = [ "Arial" ];
         monospace = [ "M PLUS 1 CODE" ];
       };
-
     };
   };
 }

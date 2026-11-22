@@ -41,6 +41,17 @@
            }
         ];
       };
+      laptop = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./nix/modules/packages/laptop.nix
+	   home-manager.nixosModules.home-manager
+	   {
+             home-manager.extraSpecialArgs = { inherit inputs; };
+             home-manager.users.lookacastle = ./nix/hosts/laptop/home.nix;
+           }
+        ];
+      };
     };
   };
 }

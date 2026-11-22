@@ -5,6 +5,7 @@
     "flameshot/flameshot.ini".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/Dotfiles/flameshot.ini";
     # "nvim/init.vim".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/Dotfiles/nvim/init.vim"; # Home manager insists on handling this itself 
     "hypr/hyprland.lua".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/Dotfiles/hypr/hyprland.lua";
+    "hypr/monitors.lua".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/Dotfiles/hypr/monitors.lua";
   };
 
   home.file = {

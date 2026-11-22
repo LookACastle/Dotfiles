@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./zsh.nix 
-    ./nvim.nix
+    ../software/mpv.nix
   ];
 }

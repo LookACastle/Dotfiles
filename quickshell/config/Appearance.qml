@@ -7,8 +7,9 @@ import qs.common
 
 Singleton {
     id: root
+
     readonly property real baseTransparency: 0.9
-    readonly property int normalFontsize: 20
+    readonly property int normalFontsize: 16
     readonly property string normalFontfamily: "M PLUS 1 CODE"
 
     // A lot of the colour logic has been taken from

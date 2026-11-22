@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./emacs.nix 
-    ./firefox.nix
+    ../services/syncthing.nix
   ];
 }
